@@ -20,6 +20,7 @@ body {
   line-height: 1.4;
   color: var(--color-white);
   margin: 0;
+  height: auto;
 }
 
 body::before {
@@ -39,6 +40,7 @@ body::before {
 
 fieldset {
   margin: 20px 15px;
+  padding: 15px;
   border-radius: 10px;
   box-shadow: 10px 10px 10px 0.2rem rgba(163, 36, 144, 0.25);
   border: 1px solid rgba(175, 252, 229, 0.7);
@@ -63,6 +65,14 @@ legend { font-weight: 400;
     margin-bottom: 20px;
     text-align: center;
   }
+
+  #first-name, #last-name, #email {
+    width: 50%;
+  }
+}
+
+#first-name, #last-name, #email {
+  max-width: 200px;
 }
 
 p {
@@ -85,14 +95,14 @@ label {
 
 #name-label, #email-label {
   
-  width: 33%;
+  width: 30%;
   margin: 0px 10px;
   padding: 10px 0px;
 }
 
 @media (max-width: 576px) {
   #name-label, #email-label {
-    width: 33%;
+    width: 30%;
     display:inline-block;
   }
 }
@@ -114,7 +124,10 @@ h1 {
   max-width: 430px;
   display: inline-block;
   max-height: 530px;
-  min-height: 200px;
+}
+
+#recommend-container {
+  min-height: 185px;
 }
 
 input[type=checkbox] {
